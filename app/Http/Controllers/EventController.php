@@ -88,7 +88,13 @@ class EventController extends Controller
 
         $path1 = $request->file('upload_file')->store('temp'); 
         $path=storage_path('app').'/'.$path1;  
-        $data = Excel::import(new UsersImport, $path);
+        try {
+            Excel::import(new UsersImport, $path);
+        } catch (\Exception $e) {
+            // $failures = $e->message();
+            return back()->with('error', $e->getMessage().': Some error, check the file and upload the file');
+        }
+        // $data = Excel::import(new UsersImport, $path);
         return back()->with('success', 'Insert Record successfully.');
     }
 
