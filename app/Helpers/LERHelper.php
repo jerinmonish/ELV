@@ -7,16 +7,9 @@ namespace App\Helpers;
 
 use Illuminate\Support\Facades\Crypt;
 use Image;
-use Mail;
 use DB;
 use URL;
 use App\User;
-use App\Job;
-use App\JobApplied;
-use App\JobView;
-use App\JobSubscription;
-use App\JobTags;
-use App\Notification;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 
