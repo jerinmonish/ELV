@@ -34,6 +34,8 @@
     <li>Sample files to upload video and csv files can be found at sample_files directory.</li>
 </ol>
 
+<p>Framework used: Laravel (7.5.2)</p>
+
 <p>If you find any bug or need to correct me, just mail me at <a href="mailto:jerinmonish007@gmail.com">jerinmonish007@gmail.com</a></p>
 
 <p>Thanks</p>
